@@ -27,3 +27,19 @@ ul li button {
     font-family: 'Dancing Script';
     font-size: 20px;
 }
+
+.content {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+}
+
+.splButtons {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    padding: 2px;
+    margin: 10px;
+    background-color: rgb(209, 193, 48);
+    font-weight: 700;
+}
