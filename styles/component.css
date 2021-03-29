@@ -1,9 +1,29 @@
-#heading {
+ul {
+    list-style-type: none;
+    float: right;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li button {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    padding: 2px;
+    background-color: blue;
+    color: white;
+}
+
+.dScript {
     font-family: 'Dancing Script';
-    font-size: 20px;
+    font-size: 50px;
+    font-weight: bolder;
     color: blue;
 }
 
-#top-left {
-    font-size: 50px;
+.dScriptCaption {
+    font-family: 'Dancing Script';
+    font-size: 20px;
 }
