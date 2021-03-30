@@ -3,6 +3,10 @@
     padding: 1px;
 }
 
+.main {
+    margin: auto;
+}
+
 body {
     background-image: url('../images/background.jpg');
     height: 100%;
@@ -10,4 +14,5 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    overflow: hidden;
 }
