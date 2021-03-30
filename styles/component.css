@@ -16,6 +16,39 @@ ul li button {
     color: white;
 }
 
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0px 10px 0px;
+    display: inline-block;
+    border: 0px solid rgb(168, 165, 165);
+    box-sizing: border-box;
+    background-color: rgb(245, 235, 235);
+    font-weight: bolder;
+}
+
+.inTitle {
+    width: 70%;
+    padding: 10px;
+    margin: 8px 0px 10px 0px;
+    display: inline-block;
+    border: 0px solid rgb(168, 165, 165);
+    box-sizing: border-box;
+    background-color: rgb(245, 235, 235);
+    font-weight: bolder;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0px 10px 0px;
+    display: inline-block;
+    border: 0px solid rgb(168, 165, 165);
+    box-sizing: border-box;
+    background-color: rgb(245, 235, 235);
+    font-weight: bolder;
+}
+
 .dScript {
     font-family: 'Dancing Script';
     font-size: 50px;
@@ -57,15 +90,17 @@ ul li button {
     border: 0px;
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0px 10px 0px;
-    display: inline-block;
-    border: 0px solid rgb(168, 165, 165);
-    box-sizing: border-box;
-    background-color: rgb(245, 235, 235);
+.btnInModal2 {
+    background-color: rgb(50, 212, 50);
+    color: white;
+    padding: 12px;
+    width: 80px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Advent Pro';
     font-weight: bolder;
+    border: 0px;
 }
 
 
@@ -94,6 +129,29 @@ input {
     /* Black w/ opacity */
 }
 
+.modal2 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 50px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
 
 /* Modal Content */
 
@@ -101,9 +159,19 @@ input {
     padding: 25px;
     font-family: 'Advent Pro';
     background-color: #fefefe;
-    margin: 5% auto 15% auto;
+    margin: 2% auto 10% auto;
     border: 1px solid #888;
     width: 25%;
+    color: rgb(85, 85, 85);
+}
+
+.modal-content2 {
+    padding: 25px;
+    font-family: 'Advent Pro';
+    background-color: #fefefe;
+    margin: 2% auto 10% auto;
+    border: 1px solid #888;
+    width: 75%;
     color: rgb(85, 85, 85);
 }
 

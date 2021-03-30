@@ -17,7 +17,7 @@
         <header>
             <ul>
                 <li><button id="myBtn">Sign In</button></li>
-                <li><button>Sign Up</button></li>
+                <li><button id="myBtn2">Sign Up</button></li>
             </ul>
 
             <div class="title">
@@ -25,39 +25,69 @@
                 <p class="dScriptCaption">Explore, Imagine, Create</p>
             </div>
 
-            <div class="container">
-                <div class="content">
-                    <button class="splButtons">All Posts</button>
-                    <button class="splButtons">Create Post</button>
-                </div>
+            <div class="content">
+                <button class="splButtons"><a href="./html/postslist.html" style="text-decoration: none;color:black;">All Posts</a></button>
+                <button class="splButtons" id="myBtn3">Create Post</button>
             </div>
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
+        </header>
 
-                <!-- Modal content -->
-                <form class="modal-content">
-                    <span class="close"><b>&times;</b></span>
-                    <h3 style="text-align:center;margin-bottom: 25px;font-size:25px"><b>Get Started</b></h3>
-                    <hr style="height:1px;border-width:0;color:gray;background-color:gray ; border-radius:50px;margin-bottom: 25px;">
-                    <label><b>Full Name</b></label>
-                    <input type="text" placeholder="Enter Full Name" required>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <form class="modal-content">
+                <span class="close"><b>&times;</b></span>
+                <h4 style="text-align:center;margin-bottom: 25px;font-size:25px"><b>Welcome Back!</b></h4>
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray ; border-radius:50px;margin-bottom: 25px;">
 
-                    <label><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" required>
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" required>
 
-                    <label><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" required>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" required>
 
-                    <label><b>Confirm Password</b></label>
-                    <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="btnInModal">Sign In</button>
+                <label style="display:flex; justify-content:center;"><b>Not a member? <span onclick="document.getElementById('myModal2').style.display='block'" style="color:blue">Sign Up</span></b></label>
+            </form>
+        </div>
 
-                    <button type="submit" class="btnInModal">Sign Up</button>
-                </form>
-            </div>
+        <!-- The Modal -->
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <form class="modal-content">
+                <span class="close"><b>&times;</b></span>
+                <h4 style="text-align:center;margin-bottom: 25px;font-size:25px"><b>Get Started</b></h4>
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray ; border-radius:50px;margin-bottom: 25px;">
+                <label><b>Full Name</b></label>
+                <input type="text" placeholder="Enter Full Name" required>
 
-    </div>
-    </header>
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" required>
 
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" required>
+
+                <label><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" required>
+
+                <button type="submit" class="btnInModal">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal3" class="modal2">
+            <!-- Modal content -->
+            <form class="modal-content2">
+                <span class="close"><b>&times;</b></span>
+                <h4 style="text-align:center;margin-bottom: 25px;font-size:25px"><b>Pen Your Post</b></h4>
+                <label><b>Title</b></label><br>
+                <input type="text" class="inTitle " required><br>
+
+                <label><b>Content: </b></label>
+                <textarea rows="15" cols="70"></textarea>
+
+                <button type="submit" class="btnInModal2">Create</button>
+            </form>
+        </div>
 
     </div>
 
