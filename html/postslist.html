@@ -4,16 +4,90 @@
 <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
+    <link rel="stylesheet" href="../styles/component.css" />
+    <link rel="stylesheet" href="../styles/postslist.css" />
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
 </head>
 
 <body>
     <!-- TODO: Include code for header here -->
 
+    <div class="main">
+        <header>
+            <ul>
+                <li><button id="myBtn">Sign In</button></li>
+                <li><button id="myBtn2">Sign Up</button></li>
+            </ul>
+
+            <div class="title">
+                <h1 class="dScript">ScriBBler</h1>
+                <p class="dScriptCaption">Explore, Imagine, Create</p>
+            </div>
+
+        </header>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <form class="modal-content">
+                <span class="close"><b>&times;</b></span>
+                <h4 style="text-align:center;margin-bottom: 25px;font-size:25px"><b>Welcome Back!</b></h4>
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray ; border-radius:50px;margin-bottom: 25px;">
+
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" required>
+
+                <button type="submit" class="btnInModal">Sign In</button>
+                <label style="display:flex; justify-content:center;"><b>Not a member? <span onclick="document.getElementById('myModal2').style.display='block'" style="color:blue">Sign Up</span></b></label>
+            </form>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <form class="modal-content">
+                <span class="close"><b>&times;</b></span>
+                <h4 style="text-align:center;margin-bottom: 25px;font-size:25px"><b>Get Started</b></h4>
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray ; border-radius:50px;margin-bottom: 25px;">
+                <label><b>Full Name</b></label>
+                <input type="text" placeholder="Enter Full Name" required>
+
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" required>
+
+                <label><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" required>
+
+                <button type="submit" class="btnInModal">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal3" class="delModal">
+            <!-- Modal content -->
+            <form class="delModal-content">
+                <h4 style="text-align:center;margin-bottom: 25px;font-size:25px"><b>Are you sure you want to delete this post?</b></h4>
+                <div class="cardDel">
+                    <button class="delBtnY">Yes</button>
+                    <button class="delBtnN">No</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
     <!-- list of all posts starts here -->
     <div>
-
+        <button id="myBtn3">DelBois</button>
         <!-- post 1 starts here -->
         <div>
             <div>
@@ -125,6 +199,7 @@
 
     </div>
     <!-- list of all posts ends here -->
+    <script src="../scripts/postslist.js"></script>
 </body>
 
 </html>
