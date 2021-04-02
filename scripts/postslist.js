@@ -6,7 +6,11 @@ var modal3 = document.getElementById("myModal3");
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 var btn2 = document.getElementById("myBtn2");
-var btn3 = document.getElementById("myBtn3");
+var btnP1 = document.getElementById("myBtnP1");
+var btnP2 = document.getElementById("myBtnP2");
+var btnP3 = document.getElementById("myBtnP3");
+var btnP4 = document.getElementById("myBtnP4");
+var btnP5 = document.getElementById("myBtnP5");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -24,7 +28,19 @@ btn2.onclick = function() {
     modal2.style.display = "block";
 }
 
-btn3.onclick = function() {
+btnP1.onclick = function() {
+    modal3.style.display = "block";
+}
+btnP2.onclick = function() {
+    modal3.style.display = "block";
+}
+btnP3.onclick = function() {
+    modal3.style.display = "block";
+}
+btnP4.onclick = function() {
+    modal3.style.display = "block";
+}
+btnP5.onclick = function() {
     modal3.style.display = "block";
 }
 

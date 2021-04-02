@@ -1,3 +1,21 @@
+* {
+    margin: 1px;
+    padding: 1px;
+}
+
+.main {
+    margin: auto;
+}
+
+.font-style {
+    font-family: 'Advent Pro';
+    font-size: 18px;
+}
+
+body {
+    background-color: orange;
+}
+
 .cardDel {
     display: flex;
     flex-direction: row;
@@ -62,4 +80,44 @@
     font-family: 'Advent Pro';
     font-weight: bolder;
     border: 0px;
+}
+
+.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 75%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(221, 214, 214);
+    border-radius: 15px;
+    margin: 10px 0px;
+    color: rgb(0, 0, 0);
+    width: 500px;
+}
+
+.insideCard {
+    width: 20%;
+    float: left;
+    background-color: white;
+    color: darkslategray;
+    border-radius: 15px 0px 0px 15px;
+    font-weight: bolder;
+    padding: 30px 10px;
+}
+
+.info {
+    padding: 10px 20px;
+    color: black;
+    font-size: small;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
