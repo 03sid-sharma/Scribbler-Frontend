@@ -1,16 +1,37 @@
+.headName {
+    font-family: 'Dancing Script';
+    padding: 20px 0px 0px 0px;
+    font-size: 45px;
+}
+
+.pencilBtn {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: 0px;
+    float: right;
+}
+
+.likeBtn {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: 0px;
+}
+
 .mainPost {
     padding: 30px 60px 0px 60px;
 }
 
 .header {
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: center;
     font-weight: bold;
     font-family: 'Advent Pro';
     font-size: 45px;
     font-stretch: wider;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .description {
@@ -19,12 +40,12 @@
 }
 
 .anime {
-    box-shadow: 10px 10px 10px rgba(231, 0, 0, 0.15);
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .anime:hover {
-    box-shadow: 10px 10px 15px rgba(182, 0, 0, 0.3);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 

@@ -124,3 +124,13 @@ body {
     flex-direction: wrap;
     justify-content: space-around;
 }
+
+.anime {
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.anime:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
