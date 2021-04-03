@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post</title>
+    <link rel="stylesheet" href="../styles/component.css" />
+    <link rel="stylesheet" href="../styles/post.css" />
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- TODO: Include code for header here -->
+    <div class="main">
+        <header>
+            <ul>
+                <li><button id="myBtn">Sign In</button></li>
+                <li><button id="myBtn2">Sign Up</button></li>
+            </ul>
+
+            <div class="title">
+                <h1 class="dScript">ScriBBler</h1>
+                <p class="dScriptCaption">Explore, Imagine, Create</p>
+            </div>
+
+        </header>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <form class="modal-content">
+                <span class="close"><b>&times;</b></span>
+                <h4 style="text-align:center;margin-bottom: 25px;font-size:25px"><b>Welcome Back!</b></h4>
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray ; border-radius:50px;margin-bottom: 25px;">
+
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" required>
+
+                <button type="submit" class="btnInModal">Sign In</button>
+                <label style="display:flex; justify-content:center;"><b>Not a member? <span onclick="document.getElementById('myModal2').style.display='block'" style="color:blue">Sign Up</span></b></label>
+            </form>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <form class="modal-content">
+                <span class="close"><b>&times;</b></span>
+                <h4 style="text-align:center;margin-bottom: 25px;font-size:25px"><b>Get Started</b></h4>
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray ; border-radius:50px;margin-bottom: 25px;">
+                <label><b>Full Name</b></label>
+                <input type="text" placeholder="Enter Full Name" required>
+
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" required>
+
+                <label><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" required>
+
+                <button type="submit" class="btnInModal">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mainPost">
+
+        <div class="header">
+            The legacy of Jimi Hendrix
+        </div>
+        <div style="font-family: 'Dancing Script';padding: 20px 0px 0px 0px; font-size: 45px;">
+            Jimi
+            <button class="anime" style="padding: 10px 20px; background-color: red; color: white; border: 0px; float: right;">Edit
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+        </div>
+
+        <div class="description">
+            Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music. Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative
+            application of such effects as wah-wah and distortion forever transformed the sound of rock and roll."[1] Musicologist Andy Aledort described Hendrix as "one of the most creative" and "influential musicians that has ever lived".[357] Music
+            journalist Chuck Philips wrote: "In a field almost exclusively populated by white musicians, Hendrix has served as a role model for a cadre of young black rockers. His achievement was to reclaim title to a musical form pioneered by black innovators
+            like Little Richard and Chuck Berry in the 1950s."[358] Hendrix favored overdriven amplifiers with high volume and gain.[122] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to
+            popularize use of the wah-wah pedal in mainstream rock.[359] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[360] He applied this technique
+            during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the
+            other fingers playing melody as a right hand.[361] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[362][nb
+            40] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[365] Holly George-Warren of Rolling Stone wrote: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him
+            had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 41]
+        </div>
+        <button class="anime" onclick="clicks()" style="padding: 10px 20px; background-color: red; color: white; border: 0px;"><i class="fa fa-thumbs-up" aria-hidden="true" style="padding-right: 3px;"></i> Like</button>
+        <div id="result" style="margin-top: 10px;"></div>
+        <div>
+            <textarea class="textareaInput" placeholder="Leave a comment..." rows="4%" cols="180%" style="font-family: 'Open Sans', sans-serif;  padding-left: 10px; padding-top: 3px; margin-top: 30px;"></textarea>
+        </div>
+        <div style="padding-top: 10px;">
+            <button class="anime" style="padding: 10px 20px; background-color: red; color: white; border: 0px;">Comment</button>
+        </div>
+        <div>
+            <p style="padding: 20px 0px 0px 0px; margin-bottom: 10px; font-size: medium; font-weight: bold;">All Comments</p>
+            <div style="background-color: rgb(219, 219, 219); width: 73%; padding: 3px 10px;">
+                <p style="background-color: white; padding: 10px; font-size: small;">Great Post! Thanks!</p>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../scripts/post.js"></script>
+
+</body>
+
+</html>
