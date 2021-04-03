@@ -4,6 +4,17 @@
     font-size: 45px;
 }
 
+.outBox {
+    background-color: rgb(201, 201, 201);
+    width: 75%;
+    padding: 5px 10px;
+}
+
+.inBox {
+    background-color: white;
+    padding: 10px;
+}
+
 .pencilBtn {
     padding: 10px 20px;
     background-color: red;
@@ -53,7 +64,14 @@
     border: 1px;
     border-color: gray;
     border-style: solid;
-    padding-left: 10px;
-    padding-top: 3px;
-    margin-top: 30px;
+    padding-left: 8px;
+    padding-top: 5px;
+    margin-top: 25px;
+}
+
+.cmntBtn {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: 0px;
 }

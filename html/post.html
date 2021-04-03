@@ -97,20 +97,25 @@
         </div>
 
         <button class="likeBtn anime" onclick="clicks()">
-            <i class="fa fa-thumbs-up" aria-hidden="true" style="padding-right: 3px;"></i> 
+            <i class="fa fa-thumbs-up" aria-hidden="true" style="padding-right: 5px;"></i> 
             Like
         </button>
-        <div id="result" style="margin-top: 10px;"></div>
+
+        <div id="count" style="margin-top: 8px;"></div>
+
         <div>
-            <textarea class="textareaInput" placeholder="Leave a comment..." rows="4%" cols="180%" style="font-family: 'Open Sans', sans-serif;  padding-left: 10px; padding-top: 3px; margin-top: 30px;"></textarea>
+            <textarea class="textareaInput" placeholder="Leave a comment..." rows="4" cols="5">
+            </textarea>
         </div>
-        <div style="padding-top: 10px;">
-            <button class="anime" style="padding: 10px 20px; background-color: red; color: white; border: 0px;">Comment</button>
-        </div>
+
         <div>
-            <p style="padding: 20px 0px 0px 0px; margin-bottom: 10px; font-size: medium; font-weight: bold;">All Comments</p>
-            <div style="background-color: rgb(219, 219, 219); width: 73%; padding: 3px 10px;">
-                <p style="background-color: white; padding: 10px; font-size: small;">First comment</p>
+            <button class="anime cmntBtn">Comment</button>
+        </div>
+
+        <div>
+            <p style="font-size: 18px;"><b>All Comments</b></p>
+            <div class="outBox">
+                <p class="inBox">First comment</p>
             </div>
         </div>
     </div>

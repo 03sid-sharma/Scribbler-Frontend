@@ -47,6 +47,6 @@ function clicks() {
             localStorage.clickcount = Number(localStorage.clickcount) + 1;
         else
             localStorage.clickcount = 1;
-        document.getElementById("result").innerHTML = localStorage.clickcount + " people have liked this!";
+        document.getElementById("count").innerHTML = localStorage.clickcount + " people have liked this!";
     }
 }
